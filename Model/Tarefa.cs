@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    internal class Tarefa
+    public class Tarefa
     {
         private int id;
         private int id_Usuario;
