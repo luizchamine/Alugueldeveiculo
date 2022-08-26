@@ -12,7 +12,7 @@ namespace DAL
         {
             get 
             { 
-                return "user id = sa; initial catalog luvancar; data source = cinzasso/meusqlexpress; password = 1707"; 
+                return @"user id = sa; initial catalog = luvancar; data source = cinzasso\meusqlexpress; password = 1707"; 
             }
         }
     }

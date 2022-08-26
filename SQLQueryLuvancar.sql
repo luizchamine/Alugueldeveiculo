@@ -64,7 +64,8 @@ go
 
 
 
-
+insert into Usuario(Id,Nome,Senha)values(9,'admin','admin')
+select * from Usuario
 
 
 

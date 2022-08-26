@@ -16,5 +16,23 @@ namespace UILuvancar
         {
             InitializeComponent();
         }
+
+        private void FormTarefa_Load(object sender, EventArgs e)
+        {
+            Login();
+        }
+
+        private void Login()
+        {
+            using(FormLogin frm = new FormLogin())
+            {
+                frm.ShowDialog();
+                if (!frm.Logou)
+                {
+                    Application.Exit();
+                }
+            }
+
+        }
     }
 }
