@@ -55,7 +55,11 @@ as
 	where Id_Tarefa = @Id_Tarefa
 go
 
-
+create proc sp_buscarusuariopornome
+	@Nome varchar(150)
+as
+	select Id, Nome, Senha from Usuario where Nome = @Nome
+go
 
 
 
