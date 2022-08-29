@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.tarefaDataGridView = new System.Windows.Forms.DataGridView();
-            this.tarefaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tarefaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.buttonAdicionar = new System.Windows.Forms.Button();
             this.buttonBuscar = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -62,10 +62,6 @@
             this.tarefaDataGridView.Size = new System.Drawing.Size(750, 220);
             this.tarefaDataGridView.TabIndex = 1;
             // 
-            // tarefaBindingSource
-            // 
-            this.tarefaBindingSource.DataSource = typeof(Model.Tarefa);
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
@@ -93,6 +89,10 @@
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             this.dataGridViewTextBoxColumn4.Width = 200;
             // 
+            // tarefaBindingSource
+            // 
+            this.tarefaBindingSource.DataSource = typeof(Model.Tarefa);
+            // 
             // buttonAdicionar
             // 
             this.buttonAdicionar.Location = new System.Drawing.Point(12, 415);
@@ -110,6 +110,7 @@
             this.buttonBuscar.TabIndex = 3;
             this.buttonBuscar.Text = "buscar";
             this.buttonBuscar.UseVisualStyleBackColor = true;
+            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
             // 
             // textBox1
             // 

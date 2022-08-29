@@ -24,7 +24,7 @@ namespace UILuvancar
         {
             Application.Exit();
         }
-
+        
         private void buttonEntrar_Click(object sender, EventArgs e)
         {
             UsuarioBLL usuarioBLL = new UsuarioBLL();
@@ -40,7 +40,7 @@ namespace UILuvancar
 
                 if (nome == textBoxUsuario.Text && senha == textBoxSenha.Text)
                 {
-                    Logou = true;
+                    Logou = false;
                     Close();
                 }
                 else
